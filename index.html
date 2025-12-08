@@ -8,70 +8,55 @@
     <title>My Resume</title>
 </head>
 <body>
-    <div class="banner">
-        <img src="styles/assets/banner4.png" alt="Banner">
-<!--        <div class="title">-->
-<!--            <h1>David Noboa</h1>-->
-<!--            <h2>Computer Science Major</h2>-->
-<!--        </div>-->
-    </div>
-    <div class="container resume">
-        <div class="content about">
-            <img src="styles/assets/profilePic.JPEG" alt="Profile Picture" class="profilePic">
-            <h2 class="subtitle">Hey there.</h2>
-            <p>
-                I am a Computer Science student with strong foundations in algorithms,
-                data structures, software and web development and good understanding of cybersecurity.
-                I love dogs and a cup of coffee in the morning
-            </p>
+    <nav>
+        <div id="nav">
+            <img src="styles/assets/logo.png" alt="logo">
+            <ul class="nav-links">
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="styles/assets/documents/DavidNoboaMoreira.pdf">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </div>
+    </nav>
+    <section id="main">
+        <div class="summary">
+            <h1 class="name">David Noboa Moreira</h1>
+            <p class="text">I am a Computer Science student with strong foundations in algorithms,
+            data structures, software and web development.
+            I love dogs and a cup of coffee in the morning</p>
+        </div>
+    </section>
+    <section id="projects" class="container">
+        <h2>Projects</h2>
+        <div class=" proj_grid">
+            <div class="proj_card">
+                <img src="styles/assets/image_compression_proj.png" alt="SVD Image Compressor" class="proj_img">
+                <div    ><h3>Numerical SVD Image Compressor</h3>
+                    <p class="proj_description">Image Compressor using Singular Value
+                        Decomposition (SVD)
+                    </p>
+                    <ul class="tech_list">
+                        <li class="tech">Python,</li>
+                        <li class="tech">Numpy,</li>
+                        <li class="tech">MatplotLib,</li>
+                        <li class="tech">Scikit-image,</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="proj_card">
+                <img src="styles/assets/spam_email_proj.png" alt="Spam Email Detector Image" class="proj_img">
+                <div><h3>Spam Email Detector</h3>
+                    <p class="proj_description">Spam Email Detector using Deep Learning</p>
+                    <ul class="tech_list">
+                        <li class="tech">Python,</li>
+                        <li class="tech">Flask,</li>
+                        <li class="tech">TensorFlow,</li>
+                        <li class="tech">HTML, CSS, JS</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <div class="content education">
-            <h2 class="subtitle">Education</h2>
-            <h3> SUNY At Albany at Albany, NY</h3>
-            <p> Bachelor of Science in Computer Science Expected in May 2027</p>
-
-            <ul>
-                <li>Dean's List Freshman, Sophomore and Junior year.</li>
-                <li>3.80 GPA</li>
-            </ul>
-        </div>
-        <div class="content experience">
-            <h2>Work Experience</h2>
-            <h3>Resident Assistant</h3>
-            <p> SUNY At Albany, Albany, NY <br>
-                2025 - Present <br>
-            <ul>
-                <li>Assists residents with transition to university and residence hall life.</li>
-                <li>Assists in supervising residents and responding to complaints, reports, requests, and emergencies.</li>
-                <li>Promotes and informs residents about relevant campus and local activities.</li>
-                <li>Facilitates resolution of disagreements between residents</li>
-                <li>Promoting student well-being and community engagement within the campus housing environment</li>
-            </ul>
-            </p>
-        </div>
-        <div class="content skills">
-            <h2 class="subtitle">Skills</h2>
-            <ul>
-                <li>Java</li>
-                <li>C</li>
-                <li>Python</li>
-                <li>SQL</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-            </ul>
-        </div>
-        <div class="content certifications">
-            <h2 class="subtitle">Certifications</h2>
-            <ul>
-                <li>ServSafe® Food Protection Manager Certification</li>
-            </ul>
-        </div>
-    </div>
-    <footer>
-        <p>Contact me</p>
-        <a href="mailto:davidnoboa1305@gmail.com">Email</a> | <a href="https://www.linkedin.com/in/davidnoboa/">LinkedIn</a> | <a href="https://github.com/davidnoboa1305">GitHub</a>
-    </footer>
 </body>
 </html>

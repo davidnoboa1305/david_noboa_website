@@ -16,66 +16,90 @@ body, p, li {
     font-weight: 400;
     line-height: 1.6;
 }
-
-/*.banner{*/
-/*    background-image: url("assets/banner4.png");*/
-/*    background-size: contain;*/
-/*    background-repeat: no-repeat;*/
-/*    display: flex;*/
-/*    flex-direction: column-reverse;*/
-/*    align-items: flex-start;*/
-/*}*/
-
-.banner img{
-    width: 100%;
-}
-.title {
-    color: white;
-    text-shadow: 2px 2px 4px #000;
-    /*backdrop-filter: blur(10px);*/
-    font-size: 1.5rem;
-    padding: 1rem;
-    margin: 1rem;
-    border-radius: 1rem;
+ul{
+    margin: 0;
+    padding: 0;
 }
 
-.resume {
-    margin-top: 2rem;
+li{
+    list-style: none;
+    display: inline-block;
 }
 
-.subtitle {
-    text-align: center;
+a{
+    text-decoration: none;
+    color: black;
 }
 
-.content {
+#nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+    background-color: #B19A7B;
+}
+
+
+#main {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.summary {
+    width: 50vh;
+    margin-left: 5rem;
+}
+
+.container {
     display: flex;
     flex-direction: column;
     align-content: center;
-    width: 60%;
+    width: 70%;
     margin-right: auto;
     margin-left: auto;
 }
 
-.about{
-    align-items: center;
-    text-align: center;
-    width: 40%;
-    gap: 1rem;
+.proj_grid{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+.proj_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #F2EFE9;
+    border-radius: 1rem;
+    height: auto;
+}
+.proj_card img{
+    width: 80%;
+    padding-bottom: 1rem;
 }
 
-.profilePic {
-    height: 16rem;
-    width: 16rem;
-    border-radius: 50%;
+.proj_card .tech_list{
+    justify-self: end;
+    font-size: .8rem;
 }
 
 
 
-@media (max-width: 600px) {
-    .title {
-        backdrop-filter: blur(20px);
-    }
-    .content{
-        width: 90%;
-    }
-}
+
+
+/*@media (max-width: 600px) {*/
+/*    .title {*/
+/*        backdrop-filter: blur(20px);*/
+/*    }*/
+/*    .content{*/
+/*        width: 90%;*/
+/*    }*/
+/*}*/
