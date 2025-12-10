@@ -8,17 +8,16 @@
     <title>My Resume</title>
 </head>
 <body>
-    <nav>
-        <div id="nav">
-            <img src="styles/assets/logo.png" alt="logo">
-            <ul class="nav-links">
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="styles/assets/documents/DavidNoboaMoreira.pdf">Resume</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
+    <div id="particles-js"></div>
+    <nav id="navbar">
+        <img src="styles/assets/logo-black.png" alt="logo">
+        <ul class="nav-links">
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="styles/assets/DavidNoboaMoreira.pdf">Resume</a></li>
+        </ul>
     </nav>
-    <section id="main">
+    <section id="hero">
         <div class="summary">
             <h1 class="name">David Noboa Moreira</h1>
             <p class="text">I am a Computer Science student with strong foundations in algorithms,
@@ -26,37 +25,40 @@
             I love dogs and a cup of coffee in the morning</p>
         </div>
     </section>
+    <hr>
+
     <section id="projects" class="container">
         <h2>Projects</h2>
         <div class=" proj_grid">
             <div class="proj_card">
                 <img src="styles/assets/image_compression_proj.png" alt="SVD Image Compressor" class="proj_img">
-                <div    ><h3>Numerical SVD Image Compressor</h3>
-                    <p class="proj_description">Image Compressor using Singular Value
-                        Decomposition (SVD)
-                    </p>
-                    <ul class="tech_list">
-                        <li class="tech">Python,</li>
-                        <li class="tech">Numpy,</li>
-                        <li class="tech">MatplotLib,</li>
-                        <li class="tech">Scikit-image,</li>
-                    </ul>
-                </div>
+                <h3>Numerical SVD Image Compressor</h3>
+                <p class="proj_description">Image Compressor using Singular Value
+                    Decomposition (SVD)
+                </p>
+                <ul class="tech_list">
+                    <li class="tech">Python,</li>
+                    <li class="tech">Numpy,</li>
+                    <li class="tech">MatplotLib,</li>
+                    <li class="tech">Scikit-image,</li>
+                </ul>
             </div>
             <div class="proj_card">
                 <img src="styles/assets/spam_email_proj.png" alt="Spam Email Detector Image" class="proj_img">
-                <div><h3>Spam Email Detector</h3>
-                    <p class="proj_description">Spam Email Detector using Deep Learning</p>
-                    <ul class="tech_list">
-                        <li class="tech">Python,</li>
-                        <li class="tech">Flask,</li>
-                        <li class="tech">TensorFlow,</li>
-                        <li class="tech">HTML, CSS, JS</li>
-                    </ul>
-                </div>
+                <h3>Spam Email Detector</h3>
+                <p class="proj_description">Spam Email Detector using Deep Learning</p>
+                <ul class="tech_list">
+                    <li class="tech">Python,</li>
+                    <li class="tech">Flask,</li>
+                    <li class="tech">TensorFlow,</li>
+                    <li class="tech">HTML, CSS, JS</li>
+                </ul>
             </div>
         </div>
     </section>
+
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
 
 </body>
 </html>

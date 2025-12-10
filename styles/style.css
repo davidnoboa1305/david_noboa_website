@@ -2,16 +2,33 @@
 body {
     padding: 0;
     margin: 0;
+    background-color: #081526;
+}
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
 
 
-h1, h2, h3 {
+/* Ensure your page content is above particles */
+.content {
+    position: relative;
+    z-index: 1;
+}
+
+h1, h2, h3{
     font-family: poppins, sans-serif;
     font-weight: 800;
     margin: 0;
 }
-
-body, p, li {
+h1, h2 {
+    color: #FAFAFA
+}
+body, p, li{
     font-family: Inter, sans-serif;
     font-weight: 400;
     line-height: 1.6;
@@ -28,21 +45,36 @@ li{
 
 a{
     text-decoration: none;
-    color: black;
+    font-family: poppins, sans-serif;
+
 }
 
-#nav{
+section {
+    margin: 2rem 0;
+}
+
+#navbar{
+    height: 3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: .5rem;
-    background-color: #B19A7B;
+    background-color: #BF9515;
+}
+#navbar img{
+    height: 1.5rem;
+    padding: 5px;
+}
+#navbar li{
+    padding: 0 1rem;
+}
+
+#navbar a{
+    color: #0D0D0D
 }
 
 
-#main {
-    background-size: cover;
-    background-position: center;
+#hero {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -51,46 +83,51 @@ a{
 }
 
 .summary {
-    width: 50vh;
+    width: 60vh;
     margin-left: 5rem;
+    color: #FAFAFA;
+    font-size: 1.2rem;
+}
+.summary h1{
+    color: #BF9515;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*align-content: center;*/
     width: 70%;
     margin-right: auto;
     margin-left: auto;
 }
 
-.proj_grid{
+#projects .proj_grid {
     margin-top: 2rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, .4fr));
+    /*gap: 1rem;*/
+    align-items: start;
+    justify-content: space-around;
 }
-.proj_card{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+
+#projects .proj_card{
 
     margin: 1rem;
     padding: 1rem;
-    background-color: #F2EFE9;
+    background-color: #BF9515;
+    color: #0D0D0D;
     border-radius: 1rem;
-    height: auto;
-}
-.proj_card img{
-    width: 80%;
-    padding-bottom: 1rem;
 }
 
-.proj_card .tech_list{
-    justify-self: end;
+#projects .proj_card img{
+    width: 100%;
+    padding-bottom: 1rem;
+    align-self: center;
+}
+
+#projects .proj_card .tech_list{
     font-size: .8rem;
 }
-
 
 
 
