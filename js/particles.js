@@ -1,4 +1,4 @@
-/* -----------------------------------------------
+f/* -----------------------------------------------
 /* Author : Vincent Garreau  - vincentgarreau.com
 /* MIT license: http://opensource.org/licenses/MIT
 /* Demo / Generator : vincentgarreau.com/particles.js
